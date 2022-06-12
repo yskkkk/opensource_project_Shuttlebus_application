@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/backgroundcolor"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.2" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.7" >
+
+            <TextView
+                android:id="@+id/Guide_Register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="회원가입"
+                android:fontFamily="@font/nanumgothicbold"
+                android:layout_weight="1"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="25sp"
+                android:autoSizeStepGranularity="2sp"
+                android:maxLines="1"
+                />
+
+            <EditText
+                android:id="@+id/ET_Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:layout_marginTop="15dp"
+                android:inputType="textEmailAddress"
+                android:hint="이메일을 입력해주세요."
+                android:fontFamily="@font/nanumgothicbold"
+                android:textColorHint="@color/white"
+                android:backgroundTint="@color/underLine"
+                android:textColor="@color/black"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="25sp"
+                android:autoSizeStepGranularity="2sp"
+                />
+
+            <EditText
+                android:id="@+id/ET_Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:layout_marginTop="10dp"
+                android:inputType="textPassword"
+                android:hint="비밀번호를 입력해주세요."
+                android:fontFamily="@font/nanumgothicbold"
+                android:textColorHint="@color/white"
+                android:backgroundTint="@color/underLine"
+                android:textColor="@color/black"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="25sp"
+                android:autoSizeStepGranularity="2sp"
+                />
+
+            <EditText
+                android:id="@+id/ET_Checkpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:layout_marginTop="10dp"
+                android:inputType="textPassword"
+                android:hint="비밀번호를 한번 더 입력해주세요."
+                android:fontFamily="@font/nanumgothicbold"
+                android:textColorHint="@color/white"
+                android:backgroundTint="@color/underLine"
+                android:textColor="@color/black"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="25sp"
+                android:autoSizeStepGranularity="2sp"
+                />
+
+            <EditText
+                android:id="@+id/ET_Phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:layout_marginTop="10dp"
+                android:inputType="phone"
+                android:hint="전화번호를 입력해주세요."
+                android:fontFamily="@font/nanumgothicbold"
+                android:textColorHint="@color/white"
+                android:backgroundTint="@color/underLine"
+                android:textColor="@color/black"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="25sp"
+                android:autoSizeStepGranularity="2sp"
+                />
+
+            <EditText
+                android:id="@+id/ET_Nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:layout_marginTop="10dp"
+                android:inputType="textPersonName"
+                android:hint="닉네임을 입력해주세요."
+                android:fontFamily="@font/nanumgothicbold"
+                android:textColorHint="@color/white"
+                android:backgroundTint="@color/underLine"
+                android:textColor="@color/black"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="25sp"
+                android:autoSizeStepGranularity="2sp"
+                />
+
+            <Button
+                android:id="@+id/Btn_Register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="가입 신청"
+                android:fontFamily="@font/nanumgothicbold"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="20sp"
+                android:autoSizeStepGranularity="2sp"
+                android:background="@color/backgroundcolor"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+</LinearLayout>
