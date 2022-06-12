@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundcolor"
+    android:id="@+id/drawer_layout"
+    tools:context=".PostList">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="11">
+
+
+            <ImageView
+                android:id="@+id/Open_Menubar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                app:srcCompat="@android:drawable/ic_menu_sort_by_size"
+
+                />
+
+            <TextView
+                android:id="@+id/Guide_Recruitment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:text="게시글"
+                android:fontFamily="@font/nanumgothicbold"
+                android:textColor="@color/black"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="20sp"
+                android:autoSizeStepGranularity="2sp"
+                android:gravity="left"
+                android:layout_marginTop="20dp"
+                />
+
+            <ImageView
+                android:id="@+id/Make_Post"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                app:srcCompat="@android:drawable/ic_input_add"
+                app:tint="@color/black" />
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/PostrecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stackFromBottom="true"
+            app:reverseLayout="true"
+            android:layout_weight="0.8"/>
+    </LinearLayout>
+
+
+    <include layout="@layout/activity_drawer" />
+
+</androidx.drawerlayout.widget.DrawerLayout>
