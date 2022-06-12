@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:orientation="vertical"
+    android:id="@+id/drawer"
+    android:background="@color/backgroundcolor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/Guide_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="내 프로필"
+            android:fontFamily="@font/nanumgothicbold"
+            android:layout_gravity="bottom"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeMaxTextSize="30sp"
+            android:autoSizeStepGranularity="2sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/Guide_Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:text="이메일: "
+                android:fontFamily="@font/nanumgothicbold"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeStepGranularity="2sp"/>
+
+            <TextView
+                android:id="@+id/Read_Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_margin="10dp"
+                android:text=""
+                android:fontFamily="@font/nanumgothicbold"
+                android:textColor="@color/black"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeStepGranularity="2sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/Guide_Nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:text="닉네임: "
+                android:fontFamily="@font/nanumgothicbold"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeStepGranularity="2sp"/>
+
+            <TextView
+                android:id="@+id/Read_Nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_margin="10dp"
+                android:text=""
+                android:fontFamily="@font/nanumgothicbold"
+                android:textColor="@color/black"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeStepGranularity="2sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/Guide_Phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:text="전화번호: "
+                android:fontFamily="@font/nanumgothicbold"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeStepGranularity="2sp"/>
+
+            <TextView
+                android:id="@+id/Read_Phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_margin="10dp"
+                android:text=""
+                android:fontFamily="@font/nanumgothicbold"
+                android:textColor="@color/black"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeStepGranularity="2sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="0.7" >
+
+        <Button
+            android:id="@+id/Btn_ChangePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="비밀번호 변경"
+            android:fontFamily="@font/nanumgothicbold"
+            android:textColor="@color/black"
+            android:backgroundTint="#97C8C6C8"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/Btn_ChangeNickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="닉네임 변경"
+            android:fontFamily="@font/nanumgothicbold"
+            android:textColor="@color/black"
+            android:backgroundTint="#97C8C6C8"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/Btn_ChangePhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="전화번호 변경"
+            android:fontFamily="@font/nanumgothicbold"
+            android:textColor="@color/black"
+            android:backgroundTint="#97C8C6C8"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/Btn_Logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="로그아웃"
+            android:fontFamily="@font/nanumgothicbold"
+            android:textColor="@color/black"
+            android:backgroundTint="#97C8C6C8"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
