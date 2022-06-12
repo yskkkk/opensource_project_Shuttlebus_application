@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/backgroundcolor"
+    tools:context=".PostUpload">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.6" >
+
+            <TextView
+                android:id="@+id/Guide_Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="게시글 생성"
+                android:fontFamily="@font/nanumgothicbold"
+                android:textColor="@color/white"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="5dp"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="20sp"
+                android:autoSizeMaxTextSize="40sp"
+                android:autoSizeStepGranularity="2sp"
+                />
+
+            <EditText
+                android:id="@+id/ET_BoardingPoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_weight="1"
+                android:inputType="textPersonName"
+                android:hint="출발지를 입력해주세요."
+                android:fontFamily="@font/nanumgothicbold"
+                android:layout_marginTop="15dp"
+                android:textColorHint="@color/white"
+                android:backgroundTint="@color/underLine"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:id="@+id/ET_Destination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_weight="1"
+                android:inputType="textPersonName"
+                android:hint="목적지를 입력해주세요."
+                android:fontFamily="@font/nanumgothicbold"
+                android:layout_marginTop="15dp"
+                android:textColorHint="@color/white"
+                android:backgroundTint="@color/underLine"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:id="@+id/ET_Time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_weight="1"
+                android:inputType="textPersonName"
+                android:hint="시간을 입력해주세요."
+                android:fontFamily="@font/nanumgothicbold"
+                android:layout_marginTop="15dp"
+                android:textColorHint="@color/white"
+                android:backgroundTint="@color/underLine"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:id="@+id/ET_Personnel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:hint="모집하는 인원을 입력해주세요."
+                android:fontFamily="@font/nanumgothicbold"
+                android:layout_marginTop="15dp"
+                android:textColorHint="@color/white"
+                android:backgroundTint="@color/underLine"
+                android:textColor="@color/black"
+
+                />
+
+            <Button
+                android:id="@+id/Btn_Upload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="등록"
+                android:textSize="20sp"
+                android:fontFamily="@font/nanumgothicbold"
+                android:layout_weight="1"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/backgroundcolor"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+</LinearLayout>
