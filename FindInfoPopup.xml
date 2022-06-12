@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="150dp"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    tools:context=".FindInfoPopup">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:id="@+id/Guide_FindInfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="찾으시는 정보"
+            android:fontFamily="@font/nanumgothicbold"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:maxLines="1"
+            android:backgroundTint="@color/white"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/underline"
+        android:backgroundTint="#81CDCDCD"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/Read_FindInfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="찾는 정보가 출력될 영역입니다."
+            android:fontFamily="@font/nanumgothicbold"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:maxLines="1"
+            android:backgroundTint="@color/white"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/TV_Check"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="확인"
+            android:fontFamily="@font/nanumgothicbold"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:textSize="15sp"
+            android:maxLines="1"
+            android:backgroundTint="#00FFFFFF" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
