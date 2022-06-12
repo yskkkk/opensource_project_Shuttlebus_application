@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    android:orientation="horizontal"
+    tools:context=".RegionalMap_Destination">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            >
+
+            <TextView
+                android:id="@+id/Guide_BoardingPoint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeStepGranularity="2sp"
+                android:text="지역이름이 표시될 영역"
+                android:fontFamily="@font/nanumgothicbold"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/googleMap"
+            class="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6.5"
+                    >
+
+                    <TextView
+                        android:id="@+id/Guide_MontoThu"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="월~목"
+                        android:fontFamily="@font/nanumgothicbold"
+                        android:maxLines="1"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="10sp"
+                        android:autoSizeMaxTextSize="30sp"
+                        android:autoSizeStepGranularity="2sp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.5"
+                    android:orientation="horizontal"
+                    >
+
+                    <Button
+                        android:id="@+id/Print_MonThuTime1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/underline"
+                        android:backgroundTint="@color/blue"
+                        android:text="시간출력"
+                        android:fontFamily="@font/nanumgothicbold"
+                        android:maxLines="1"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:layout_margin="5dp"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="10sp"
+                        android:autoSizeMaxTextSize="25sp"
+                        android:autoSizeStepGranularity="2sp"
+                        android:enabled="false"
+                        />
+
+                    <Button
+                        android:id="@+id/Print_MonThuTime2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/underline"
+                        android:backgroundTint="@color/blue"
+                        android:layout_weight="1"
+                        android:text="시간출력"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/nanumgothicbold"
+                        android:maxLines="1"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="10sp"
+                        android:autoSizeMaxTextSize="25sp"
+                        android:autoSizeStepGranularity="2sp"
+                        android:enabled="false"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6.5"
+                    >
+                    <TextView
+                        android:id="@+id/Guide_Fri"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="금"
+                        android:fontFamily="@font/nanumgothicbold"
+                        android:maxLines="1"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="10sp"
+                        android:autoSizeMaxTextSize="30sp"
+                        android:autoSizeStepGranularity="2sp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.5"
+                    >
+                    <Button
+                        android:id="@+id/Print_FriTime1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/underline"
+                        android:backgroundTint="@color/blue"
+                        android:text="시간출력"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/nanumgothicbold"
+                        android:maxLines="1"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="10sp"
+                        android:autoSizeMaxTextSize="25sp"
+                        android:autoSizeStepGranularity="2sp"
+                        android:enabled="false"
+                        />
+
+                    <Button
+                        android:id="@+id/Print_FriTime2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/underline"
+                        android:backgroundTint="@color/blue"
+                        android:layout_weight="1"
+                        android:text="시간출력"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/nanumgothicbold"
+                        android:maxLines="1"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="10sp"
+                        android:autoSizeMaxTextSize="25sp"
+                        android:autoSizeStepGranularity="2sp"
+                        android:enabled="false"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+    </LinearLayout>
+</LinearLayout>
