@@ -1,0 +1,67 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_weekday"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeMinTextSize="20sp"
+                android:autoSizeStepGranularity="1sp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/buttonaround"
+                android:fontFamily="@font/sc"
+                android:text="평일"></Button>
+
+            <Button
+                android:id="@+id/btn_weekend"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="토요일/공휴일"
+                android:fontFamily="@font/sc"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="20sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeStepGranularity="1sp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonaround"
+                android:layout_marginBottom="15dp"
+                ></Button>
+            <Button
+                android:id="@+id/btn_holiday"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="일요일"
+                android:fontFamily="@font/sc"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="20sp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeStepGranularity="1sp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonaround"
+                android:layout_marginBottom="15dp"
+                ></Button>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:background="#66bdbdbd"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+</LinearLayout>
