@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    android:orientation="horizontal"
+    tools:context=".Find_IDPW">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/Guide_FindEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="이메일을 찾으시겠습니까?"
+                android:fontFamily="@font/nanumgothicbold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:maxLines="1"
+                android:layout_weight="1"
+                android:layout_marginTop="40dp"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="20sp"
+                android:autoSizeStepGranularity="2sp"/>
+
+            <EditText
+                android:id="@+id/ET_Phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="phone"
+                android:hint="전화번호를 입력해주세요."
+                android:fontFamily="@font/nanumgothicbold"
+                android:textColorHint="@color/white"
+                android:backgroundTint="@color/underLine"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="20sp"
+                android:autoSizeStepGranularity="2sp"
+                />
+
+            <Button
+                android:id="@+id/Btn_FindEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text="이메일 찾기"
+                android:fontFamily="@font/nanumgothicbold"
+                android:textColor="@color/black"
+                android:background="@color/backgroundcolor"
+                android:layout_marginTop="5dp"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="20sp"
+                android:autoSizeStepGranularity="2sp"
+                />
+
+            <TextView
+                android:id="@+id/Guide_FindPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="비밀번호를 찾으시겠습니까?"
+                android:fontFamily="@font/nanumgothicbold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:maxLines="1"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="20sp"
+                android:autoSizeStepGranularity="2sp"/>
+
+            <EditText
+                android:id="@+id/ET_Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:hint="이메일을 입력해주세요."
+                android:fontFamily="@font/nanumgothicbold"
+                android:textColorHint="@color/white"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/underLine"
+                android:textColor="@color/black"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="20sp"
+                android:autoSizeStepGranularity="2sp"
+                />
+
+            <EditText
+                android:id="@+id/ET_Phonenum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="phone"
+                android:hint="전화번호를 입력해주세요."
+                android:fontFamily="@font/nanumgothicbold"
+                android:textColorHint="@color/white"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/underLine"
+                android:textColor="@color/black"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="20sp"
+                android:autoSizeStepGranularity="2sp"
+                />
+
+            <Button
+                android:id="@+id/Btn_FindPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text="비밀번호 찾기"
+                android:fontFamily="@font/nanumgothicbold"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/backgroundcolor"
+                android:autoSizeTextType="uniform"
+                android:layout_marginTop="5dp"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="20sp"
+                android:autoSizeStepGranularity="2sp"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            >
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+</LinearLayout>
